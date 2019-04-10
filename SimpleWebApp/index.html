@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Js with Web Api</title>
+
+    <script src="Scripts/angular.js">
+
+    </script>
+    <script src="Scripts/Script.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+
+        <table>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+            </tr>
+            <tr ng-repeat="employee in employees">
+                <td>
+                    {{employee.Id}}
+                </td>
+                <td>
+                    {{employee.EName}}
+                </td>
+            </tr>
+
+
+        </table>
+
+    </div>
+</body>
+</html>
