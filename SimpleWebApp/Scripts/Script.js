@@ -20,10 +20,23 @@ var MyController = function ($scope, $http) {
     var getAllEmployees = function () {
         $http.get(url).then(onSuccess, onFailure)
 
+
     
     };
 
     getAllEmployees();
+
+    debugger;
+
+     $scope.AddData = function () {
+       
+        var emp = {
+            Name:$scope.EName
+         };
+         console.log(emp);
+         $http.post(url, emp)
+
+    };
 };
 
 myApp.controller("MyController", MyController);
