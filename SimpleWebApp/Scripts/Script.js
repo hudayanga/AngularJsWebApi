@@ -6,7 +6,7 @@ var myApp = angular.module("myApp", []);
 
 
 var MyController = function ($scope, $http) {
-    debugger;
+    //debugger;
     var onSuccess = function (response) {
         console.log(response.data);
         $scope.employees = response.data;;
