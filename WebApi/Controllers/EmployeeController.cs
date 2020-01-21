@@ -19,7 +19,7 @@ namespace WebApi.Controllers
 
         }
 
-        // GET api/values/4branch
+        // GET api/values/4branchCom
         public Employee Get(int id)
         {
             using (EmployeeDbEntities eDb = new EmployeeDbEntities())
